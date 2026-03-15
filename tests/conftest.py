@@ -1,8 +1,7 @@
 import pytest
-from flask import template_rendered
 
 from ..main.app import create_app, db as _db
-from ..main.models import Client, Parking, ClientParking
+from ..main.models import Client, Parking
 
 
 @pytest.fixture

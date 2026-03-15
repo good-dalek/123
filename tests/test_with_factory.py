@@ -15,4 +15,3 @@ def test_create_parking(app, db):
 	db.session.commit()
 	assert parking_factory.id is not None
 	assert len(db.session.query(Parking).all()) == 2
-
