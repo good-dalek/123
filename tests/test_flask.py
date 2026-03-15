@@ -2,6 +2,7 @@ import datetime
 
 import pytest
 from ..main.models import Parking, ClientParking, Client
+from .factories import ClientFactory, ParkingFactory
 
 
 @pytest.mark.parametrize("route", ["/clients", "/clients/1"])
